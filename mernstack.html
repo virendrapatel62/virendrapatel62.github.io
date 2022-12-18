@@ -5,8 +5,642 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mern Stack Courses</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .del {
+        font-size: 1.1rem;
+      }
+      .price {
+        margin: 0 10px;
+      }
+      .show-more,
+      .show-more:hover {
+        background-color: #1181ba;
+        color: white;
+        border: none;
+      }
+      .enroll,
+      .enroll:hover {
+        background-color: #2aa112;
+        color: white;
+        border: none;
+      }
+
+      .location {
+        margin: 10px;
+      }
+
+      .location p {
+        padding: 0;
+        margin: 1px;
+      }
+
+      #accordion {
+        margin: 20px;
+      }
+      #lms-project .card span,
+      #accordion span {
+        color: rgb(33, 30, 30);
+        font-size: 19px;
+      }
+      #lms-project .card span::after,
+      #accordion .card span::after {
+        content: "👇";
+      }
+    </style>
   </head>
   <body>
-    <h1>Mern Stack</h1>
+    <nav class="navbar navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Feel Free To Code</a>
+        <div class="navbar" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://wa.me/919144460897"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-4 container">
+      <h1>Upcoming Live Courses</h1>
+      <hr />
+      <section class="row">
+        <div class="col-10 mx-auto col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./img/mern.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Zero To Hero MERN Stack</h5>
+              <p class="card-text">
+                A Complete Guide to JavaScript, Node Js, Express JS, Mongoose
+                And React
+              </p>
+              <hr />
+              <div class="price">
+                <h4>
+                  <span>₹2500</span>
+                </h4>
+              </div>
+              <hr />
+              <div class="location">
+                <p>📍 Live Classes</p>
+                <p>
+                  📆
+                  <span>20<sup>th</sup>Jan</span>
+                  -
+                  <span>20<sup>th</sup> Feb</span>
+                </p>
+                <p>
+                  ⏰
+                  <span>9 PM to 11 PM</span>
+                </p>
+                <p>
+                  🔁
+                  <span>Daily</span>
+                </p>
+              </div>
+              <hr />
+              <a href="#mern" class="btn show-more same-page-link">Show More</a>
+              <a
+                href="https://rzp.io/l/feelfreetocode-mern-stack"
+                class="btn enroll"
+                >Enroll Now</a
+              >
+              <br />
+              <hr />
+              <div
+                class="animate__animated animate__headShake animate__infinite infinite"
+              >
+                <b>Check Out the Bundle Course & Get 20% Discount</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 mx-auto col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./img/lms-thumb.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Complete LMS Project In MERN</h5>
+              <p class="card-text">
+                <b>Code With Me</b> Series on LMS Project.
+              </p>
+              <hr />
+              <div class="price">
+                <h4>
+                  <span>₹2500</span>
+                </h4>
+              </div>
+              <hr />
+              <div class="location">
+                <p>📍 Live Classes</p>
+                <p>
+                  📆
+                  <span>1<sup>st</sup> March</span>
+                  -
+                  <span>30<sup>th</sup> March</span>
+                </p>
+                <p>
+                  ⏰
+                  <span>9 PM to 11 PM</span>
+                </p>
+                <p>
+                  🔁
+                  <span>Daily</span>
+                </p>
+              </div>
+              <hr />
+
+              <a href="#lms-project" class="btn show-more">Show More</a>
+              <a
+                href="https://pages.razorpay.com/feelfreetocode-lms"
+                class="btn enroll"
+                >Enroll Now</a
+              >
+
+              <br />
+              <hr />
+              <div
+                class="animate__animated animate__headShake animate__infinite infinite"
+              >
+                <b>Check Out the Bundle Course & Get 20% Discount</b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 mx-auto col-md-6 col-lg-4">
+          <div class="card">
+            <img src="./img/bundlecourse.png" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">
+                Bundle Course (MERN Stack + Project LMS)
+              </h5>
+              <p class="card-text"></p>
+              <h6>This Course Contains 👇</h6>
+              <li>Zero To Hero MERN Stack Course</li>
+              <li>Complete LMS Project In MERN</li>
+              <hr />
+              <div class="price">
+                <h4>
+                  <span class="del">
+                    <span>₹2500 + ₹2500 =<del> ₹5000 </del> 😢</span></span
+                  >
+                  <br />
+                  <div
+                    class="animate__animated animate__headShake animate__infinite infinite"
+                  >
+                    <span> ₹3999 😍 </span>
+                  </div>
+                </h4>
+              </div>
+              <hr />
+
+              <div class="location">
+                <p>📍 Live Classes</p>
+                <p>
+                  📆
+                  <span>20<sup>th</sup>Jan</span>
+                  -
+                  <span>30<sup>th</sup> March</span>
+                </p>
+                <p>
+                  ⏰
+                  <span>9 PM to 11 PM</span>
+                </p>
+                <p>
+                  🔁
+                  <span>Daily</span>
+                </p>
+              </div>
+
+              <hr />
+              <a href="https://rzp.io/l/mern-bundle-course" class="btn enroll"
+                >Enroll Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- bundle Courses -->
+      <br />
+      <br />
+    </main>
+
+    <hr />
+
+    <div class="container">
+      <section id="mern">
+        <h1 class="">Zero To Hero MERN Stack Course 🔥</h1>
+        <hr />
+        <p>We will cover everything you need to be a MERN Stack Developer 😎</p>
+        <hr />
+        <h4>Check out the Topic we will Cover 👇</h4>
+
+        <div id="accordion" class="">
+          <!-- js -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <span
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#js-collapse"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  JavaScript
+                </span>
+              </h5>
+            </div>
+
+            <div
+              id="js-collapse"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <ul class="list-group javascript-topics"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- node js -->
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <span
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#node-c"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Node JS
+                </span>
+              </h5>
+            </div>
+
+            <div
+              id="node-c"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <ul class="list-group nodejs-topics"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- express js -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <span
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#expresscollap"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Express JS
+                </span>
+              </h5>
+            </div>
+
+            <div
+              id="expresscollap"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <ul class="list-group express-topics"></ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <span
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#react-collapse"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  React
+                </span>
+              </h5>
+            </div>
+
+            <div
+              id="react-collapse"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <ul class="list-group react-topics"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 mx-auto">
+          <div class="location">
+            <p>📍 Live Classes</p>
+            <p>
+              📆
+              <span>20<sup>th</sup>Jan</span>
+              -
+              <span>20<sup>th</sup> Feb</span>
+            </p>
+            <p>
+              ⏰
+              <span>9 PM to 11 PM</span>
+            </p>
+            <p>
+              🔁
+              <span>Daily</span>
+            </p>
+          </div>
+          <hr />
+          <a
+            href="https://rzp.io/l/feelfreetocode-mern-stack"
+            class="btn enroll"
+            >Enroll Now</a
+          >
+          <br />
+        </div>
+      </section>
+
+      <hr />
+      <hr />
+      <section id="lms-project">
+        <h1>Learning Management System Project 🎥</h1>
+
+        <p>
+          The End to End project where you will learn how to create Learning
+          Management System
+        </p>
+        <p>Have a look on features that we will cover 👇</p>
+        <!-- React -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <span
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#lms-collapse"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Learning Management System
+                <br />
+                MERN Stack
+              </span>
+            </h5>
+          </div>
+
+          <div
+            id="lms-collapse"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <ul class="list-group lms-topics"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
   </body>
 </html>
+
+<script>
+  const jsTopicsDiv = document.querySelector(".javascript-topics");
+  const nodediv = document.querySelector(".nodejs-topics");
+  const expressdiv = document.querySelector(".express-topics");
+  const reactDiv = document.querySelector(".react-topics");
+  const nodeJsTopics = `What is Node Js
+  Module
+  File System
+  Path Module
+  HTTP Module
+  Event`
+    .split("\n")
+    .map((i, index) => {
+      return `<li class="list-group-item">${index + 1}. ${i}</li>`;
+    });
+  const jsTopics = `Variables
+      Operators
+      Datatypes
+      Conditions
+      Loops
+      Functions
+      Strings
+    Array
+    Objects,Map,Set
+    Date
+    Math
+    Errors
+    Arrow Functions
+    This Keyword
+    Callback
+    Asynchronous
+    Promise, Then Catch , Async Await
+    Default parameters
+    Template literals (Template strings)
+    Tagged Templates
+    Destructuring assignment
+    Spread and Rest syntaxes (…)
+    Object.assign() and Object.is()
+    Classes`
+    .split("\n")
+    .map((i, index) => {
+      return `<li class="list-group-item">${index + 1}. ${i}</li>`;
+    });
+
+  jsTopicsDiv.innerHTML = jsTopics.join("");
+  nodediv.innerHTML = nodeJsTopics.join("");
+  expressdiv.innerHTML = `What is Express
+Request-Response
+Express App
+Request Handlers
+HTTP METHOD
+Query String
+Request Body
+Params
+Cookies
+Headers
+Middlewares
+Mongoose - CRUD
+Authentication
+Authorization
+Rest API MINI Project - Quiz App
+Server Side Rendering
+Mini Project`
+    .split("\n")
+    .map((i) => i.trim())
+    .filter((i) => i)
+    .map((i, index) => {
+      return `<li class="list-group-item">${index + 1}. ${i}</li>`;
+    })
+    .join("");
+
+  reactDiv.innerHTML = `ES6 Refresher 
+Let const var
+Objects
+this keyword  
+Binding this
+Arrow Functions and this
+Array map & forEach
+Object Destructuring
+Spread Operator
+Classes
+Inheritance
+Modules
+Named & default exports
+Components
+Function Component
+Intro To Class Components
+Babel and JSX
+Children
+Attributes & props
+React State and Events
+Listen to events
+Working with State
+Working with multiple state
+Using Single state 
+Two way binding
+Parent to child communication
+Controlled vs Uncontrolled Components & Stateless vs Stateful Components
+Rendering List and Conditional Content
+Chart Example Demo App
+Styling of React Component
+Inline style
+classes 
+Css modules
+Dynamic style with css module
+React Dev Tool and Debugging
+Practice Application
+Wrapper comonents
+cant have two element withou wrapper
+intro to Fragement"
+React Portal
+Refs
+UseEffect
+UseEffect & Dependecies
+what to add and what not in deps
+Cleanup function
+UseReducer
+Nested Object in Deps
+Context Api 
+Custom Context Provider
+Ruled of Hooks
+Forward Ref
+
+Creat Food Ordering App - Without Apis local state - context api and reducer practice
+
+React Optomization Techs
+React Optomization Techs
+Usememo and callback
+
+Intro to class components
+
+Connecting to Backend
+https://swapi.dev/
+
+Custom hoos
+Custom Http Hooks
+
+Form & validations
+Forms with Custom hooks
+
+React Router - Multi page SPA
+
+Redux
+
+Project`
+    .split("\n")
+    .map((i) => i.trim())
+    .filter((i) => i)
+    .map((i, index) => {
+      return `<li class="list-group-item">${index + 1}. ${i}</li>`;
+    })
+    .join("");
+
+  document.querySelector(".lms-topics").innerHTML = `
+      API Creation
+      React Project
+      Authentication
+      Authorization
+      Admin-User management
+      Payments
+      Email Sending
+      Email Sending on Create user and forget Password
+      Customizable UI By User and Admin
+      Admin Panel To Add Courses, Delete Courses and Manage Users
+      Payment Summary For Admin
+      Purchase Course
+      Manage My Courses
+      Courses Coupon Code
+      Any Many More 😎
+
+      `
+    .split("\n")
+    .map((i) => i.trim())
+    .filter((i) => i)
+    .map((i, index) => {
+      return `<li class="list-group-item">${index + 1}. ${i}</li>`;
+    })
+    .join("");
+</script>
